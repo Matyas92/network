@@ -1,0 +1,22 @@
+{% extends "network/layout.html" %}
+
+{% block title %}
+Create a Post
+{% endblock %}
+
+
+
+{% block body %}
+<h1 class="text-center my-4">Edit a Post</h1>
+
+<div class="d-flex justify-content-center">
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+
+
+    <input class="btn btn-warning" type="submit" name="" value="Edit" id="">
+  </form>
+</div>
+{% endblock %}
